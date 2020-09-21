@@ -97,6 +97,10 @@ class Message(models.Model):
     )
     timestamp_delivered = models.DateTimeField()
     timestamp_read = models.DateTimeField()
+    findme = models.TextField(
+        null=True,
+        blank=True,
+    )
 
 
 class ThreadMember(models.Model):
